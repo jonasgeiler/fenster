@@ -124,6 +124,9 @@ FENSTER_API void fenster_audio_write(struct fenster_audio *fa, float *buf,
   }
 }
 FENSTER_API void fenster_audio_close(struct fenster_audio *fa) {
+  for (int i = 0; i < 2; i++)
+    while (!(fa->hdr[i].dwFlags & WHDR_DONE))
+      Sleep(10);
   waveOutClose(fa->wo);
 }
 #elif defined(__linux__)
