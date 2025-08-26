@@ -4,7 +4,7 @@ Fenster /ˈfɛnstɐ/ -- a German word for "window".
 
 This library provides the most minimal and highly opinionated way to display a cross-platform 2D canvas. If you remember Borland BGI or drawing things in QBASIC or `INT 10h`- you know what I mean. As a nice bonus you also get cross-platform keyboard/mouse input and audio playback in only a few lines of code.
 
-> [!INFO]
+> [!NOTE]
 > This is a fork of [fenster](https://github.com/zserge/fenster) by [Serge Zaitsev (@zserge)](https://github.com/zserge), with some improvements and fixes:
 > - TODO
 > 
