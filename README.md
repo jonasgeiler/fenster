@@ -6,7 +6,8 @@ This library provides the most minimal and highly opinionated way to display a c
 
 > [!NOTE]
 > This is a fork of [fenster](https://github.com/zserge/fenster) by [Serge Zaitsev (@zserge)](https://github.com/zserge), with some improvements and fixes:
-> - TODO
+> - Play pending audio frames instead of stopping playback immediately
+> - Use `CLOCK_REALTIME` instead of `CLOCK_MONOTONIC` because it is more robust
 > 
 > It wouldn't be possible without their original work, so credit goes out to them!
 
