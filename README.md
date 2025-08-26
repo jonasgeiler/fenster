@@ -4,6 +4,12 @@ Fenster /ˈfɛnstɐ/ -- a German word for "window".
 
 This library provides the most minimal and highly opinionated way to display a cross-platform 2D canvas. If you remember Borland BGI or drawing things in QBASIC or `INT 10h`- you know what I mean. As a nice bonus you also get cross-platform keyboard/mouse input and audio playback in only a few lines of code.
 
+> [!INFO]
+> This is a fork of [fenster](https://github.com/zserge/fenster) by [Serge Zaitsev (@zserge)](https://github.com/zserge), with some improvements and fixes:
+> - TODO
+> 
+> It wouldn't be possible without their original work, so credit goes out to them!
+
 ## What it does for you
 
 * Single application window of given size with a title.
@@ -15,7 +21,7 @@ This library provides the most minimal and highly opinionated way to display a c
 * Cross-platform audio playback (WinMM, CoreAudio, ALSA).
 * Simple polling API without a need for callbacks or multithreading (like Arduino/Processing).
 * One C99 header of ~300LOC, easy to understand and extend.
-* Go bindings (`import "github.com/zserge/fenster"`, see [godoc](https://pkg.go.dev/github.com/zserge/fenster))
+* Go bindings (`import "github.com/jonasgeiler/fenster"`, see [godoc](https://pkg.go.dev/github.com/jonasgeiler/fenster))
 * Zig bindings (see [examples/minimal-zig](/examples/minimal-zig))
 * Lua bindings (see https://github.com/jonasgeiler/lua-fenster)
 * And, yes, [it can run Doom](/examples/doom-c)!
