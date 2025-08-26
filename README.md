@@ -9,6 +9,7 @@ This library provides the most minimal and highly opinionated way to display a c
 > - Play pending audio frames instead of stopping playback immediately
 > - Use `CLOCK_MONOTONIC` instead of `CLOCK_REALTIME` because it is more robust
 > - Actually use the `snd_pcm_recover` return value on failure in `fenster_audio_available`
+> - Add missing `#include`s for standard libraries to `fenster_audio.h`
 > 
 > It wouldn't be possible without their original work, so credit goes out to them!
 
