@@ -147,7 +147,8 @@ FENSTER_API int fenster_audio_open(struct fenster_audio *fa) {
 }
 FENSTER_API int fenster_audio_available(struct fenster_audio *fa) {
   int n = snd_pcm_avail(fa->pcm);
-  if (n < 0) snd_pcm_recover(fa->pcm, n, 0);
+  if (n < 0) n = snd_pcm_recover(fa->pcm, n, 0);
+  if (n < 0) return 0;
   return n;
 }
 FENSTER_API void fenster_audio_write(struct fenster_audio *fa, float *buf,

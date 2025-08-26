@@ -8,6 +8,7 @@ This library provides the most minimal and highly opinionated way to display a c
 > This is a fork of [fenster](https://github.com/zserge/fenster) by [Serge Zaitsev (@zserge)](https://github.com/zserge), with some improvements and fixes:
 > - Play pending audio frames instead of stopping playback immediately
 > - Use `CLOCK_MONOTONIC` instead of `CLOCK_REALTIME` because it is more robust
+> - Actually use the `snd_pcm_recover` return value on failure in `fenster_audio_available`
 > 
 > It wouldn't be possible without their original work, so credit goes out to them!
 
